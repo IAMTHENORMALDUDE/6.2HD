@@ -7,7 +7,7 @@ import {expect} from 'chai';
 
 describe('Testing POST /api/users', () => {
     it('should create a new user', function(){
-        const response =fetch('http://localhost:4000/api/users', {
+        const response =fetch('http://localhost:3000/api/users', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
