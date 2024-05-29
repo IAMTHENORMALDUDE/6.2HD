@@ -6,10 +6,7 @@ clickMeButton.addEventListener('click', function(){
     console.log("Click me button clicked");
     form.style.display = "flex";
 });
-// Defining a list for new users:
-let userList = [];
 
-var formSubmitButton = document.getElementById("formSubmit");
 
 function submitForm(event){
     event.preventDefault();

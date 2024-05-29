@@ -16,7 +16,7 @@ pipeline {
 
         stage('Quality Check') {
             steps {
-                sh 'npm run quality'
+                sh 'npm run lint'
             }
         }
 

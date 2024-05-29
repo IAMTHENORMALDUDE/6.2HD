@@ -5,7 +5,8 @@
   "scripts": {
     "test": "mocha --experimental-modules 'test/*.mjs'",
     "dev": "node server.js",
-    "mocha": "mocha --reporter spec"
+    "mocha": "mocha --reporter spec",
+    "lint": "eslint"
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +20,9 @@
     "request": "^2.88.2"
   },
   "devDependencies": {
+    "@eslint/js": "^9.3.0",
+    "eslint": "^9.3.0",
+    "globals": "^15.3.0",
     "nodemon": "^3.1.0"
   }
 }
