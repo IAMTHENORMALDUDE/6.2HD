@@ -4,7 +4,7 @@
   "main": "server.js",
   "scripts": {
     "test": "mocha --experimental-modules 'test/*.mjs'",
-    "dev": "nodemon server.js",
+    "dev": "node server.js",
     "mocha": "mocha --reporter spec"
   },
   "author": "",

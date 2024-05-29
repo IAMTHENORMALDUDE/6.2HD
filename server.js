@@ -2,7 +2,7 @@
 const express = require("express");
 const app = express();
 // PORT:
-const PORT = 4000;
+const PORT = 3000;
 // Middleware:
 app.use(express.json());
 app.use(express.static('public'));
@@ -17,14 +17,14 @@ app.get('/api/users',(req,res) =>{
 app.post('/api/users',(req,res) =>{
 
     const {firstName , lastName, email,password} = req.body;
-    // creating a json object from the received data 
-    // to add to our list of users
+
     const userData = {
         firstName: firstName,
         lastName: lastName,
         email: email,
         password: password
     };
+
     users.push(userData);
     
     res.sendStatus(200);
@@ -35,4 +35,4 @@ app.post('/api/users',(req,res) =>{
 
 });
 
-app.listen(4000, ()=>(console.log("Server has started on port:", PORT)));
+app.listen(PORT, ()=>(console.log("Server has started on port:", PORT)));
